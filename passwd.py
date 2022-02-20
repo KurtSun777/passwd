@@ -1,16 +1,14 @@
 password = '123456'
-i = 3
+i=3
 
-while True:
-    pwd = input('please enter passwd: ')
-    if pwd == password:
+while i > 0:
+    pw = input('plz input password: ')
+    if password == pw:
         print('log in')
         break
     else:
         i -= 1
-        print('wrong, you will have', i, 'chance')
-        if i == 0:
-            break
+        print('you will have', i, 'chance')
         
 
     
